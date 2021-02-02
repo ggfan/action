@@ -1,4 +1,4 @@
-name: Android CI
+name: NDK CI
 
 on:
   push:
@@ -17,7 +17,15 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
-    - name: Build with Gradle
-      run: ./gradlew build
+    - name: execute CI for hello-native
+      run: |
+        pushd hello-native
+        chmod +x gradlew
+        ./gradlew build
+        popd
+    - name: Experimental
+      run: |
+        ls -la
+        pushd $HOME
+        popd
+
