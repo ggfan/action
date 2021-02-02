@@ -1,4 +1,5 @@
-NDK Samples [![Build Status](https://travis-ci.org/googlesamples/android-ndk.svg?branch=master)](https://travis-ci.org/googlesamples/android-ndk) ===========
+NDK Samples [![Build Status](https://github.com/ggfan/action/workflows/NDK%20CI/badge.svg?branch=main)](https://github.com/ggfan/action/actions)
+===========
 
 This repository contains [Android NDK][0] samples with Android Studio [C++ integration](https://www.youtube.com/watch?v=f7ihSQ44WO0&feature=youtu.be).
 

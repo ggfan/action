@@ -23,6 +23,12 @@ jobs:
         chmod +x gradlew
         ./gradlew build
         popd
+    - name: run CI for hello-negative-test
+      run: |
+        pushd hello-negative-test
+        chmod +x gradlew
+        ./gradlew build
+        popd
     - name: Experimental
       run: |
         ls -la
